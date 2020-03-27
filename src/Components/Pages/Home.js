@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
 import allData from '../../Helpers/Data/allData';
-import CountriesDropdown from '../Shared/CountriesDropdown/Countries';
 
 class Data extends React.Component {
   state = {
