@@ -1,14 +1,22 @@
 import React from 'react';
-import Data from '../Components/Pages/Home';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Link,
+} from 'react-router-dom';
+import Home from '../Components/Pages/Home';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Data />
-      </header>
+      <Router>
+        <Link path="/" exact component={Home} />
+        {/* <Link path="/countries" exact component={Countries} /> */}
+      </Router>
     </div>
   );
 }
