@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
-import allData from '../../Helpers/Data/allData';
+import allData from '../../../Helpers/Data/allData';
 
-class Data extends React.Component {
+class Countries extends React.Component {
   state = {
     data: [],
     options: [],
@@ -25,7 +25,7 @@ class Data extends React.Component {
   render() {
     const { options } = this.state;
     return (
-      <div className="dataTest">
+      <div className="Countries">
         <h1 className="text-center">Covid-19 Tracker</h1>
           <div class="form-group">
              <label for="exampleFormControlSelect1">Countries</label>
@@ -38,4 +38,4 @@ class Data extends React.Component {
   }
 }
 
-export default Data;
+export default Countries;

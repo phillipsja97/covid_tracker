@@ -12,6 +12,7 @@ class MyNavbar extends React.Component {
             Covid-19 Tracker & Visualization
           </a>
           <li className="form-inline my-2 my-lg-0">
+            <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/countries">Countries</Link>
           </li>
         </nav>
